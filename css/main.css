@@ -287,7 +287,7 @@ input:focus {
 }
 
 .box__info {
-  max-width: 370px;
+  width: 370px;
   margin-left: 30px;
 }
 
@@ -397,7 +397,7 @@ input:focus {
 }
 
 .novelties__img {
-  width: 81px;
+  max-width: 81px;
 }
 
 .novelties__item__info {
@@ -429,7 +429,7 @@ input:focus {
 }
 
 .search__desc {
-  width: 225px;
+  max-width: 225px;
   background-color: #f4f7f6;
   padding: 18px;
   text-transform: capitalize;
@@ -537,12 +537,13 @@ input:focus {
 .shop__card {
   width: 345px;
   height: 430px;
-  text-align: center;
 }
 
 .card__img {
   position: relative;
   z-index: 1;
+  display: block;
+  text-align: center;
 }
 
 .card__img::before {
@@ -594,9 +595,13 @@ input:focus {
 .card__button {
   color: #fff;
   background-color: #b59f5b;
-  padding: 20px 28px;
   border: 1px solid #b59f5b;
   cursor: pointer;
+  width: 140px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "OpenSans-Bold", sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -841,7 +846,7 @@ input:focus {
 
   .trend__gallary {
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 2px;
   }
 
   .gallary__block__title {
@@ -858,12 +863,24 @@ input:focus {
     flex-direction: column;
   }
 
-  .news__box::after {
-    content: "";
-    height: 3px;
+  .box__img {
     width: 100%;
+  }
+
+  .box__info {
+    margin-left: 0;
+  }
+
+  .news__box {
     border-bottom: 3px solid #eeeeee;
-    margin-top: 22px;
+  }
+
+  .additions {
+    max-width: 270px;
+  }
+
+  .info__text {
+    margin-bottom: 20px;
   }
 
   .shop__block {
@@ -874,7 +891,7 @@ input:focus {
   }
 
   .shop__card {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 
   .card__title {
@@ -887,11 +904,11 @@ input:focus {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   @media (orientation: portrait) {
     .gallary__box {
       min-height: 230px;
-      min-width: 100%;
+      width: 100%;
       flex-grow: 1;
     }
   }
@@ -964,6 +981,15 @@ input:focus {
 
   .additions {
     margin: 0 auto;
+    width: 100%;
+  }
+
+  .search__desc {
+    width: 100%;
+  }
+
+  .mailing__search {
+    width: 100%;
   }
 
   .news__box {
@@ -981,6 +1007,7 @@ input:focus {
 
   .shop__card {
     margin-bottom: 100px;
+    width: 100%;
   }
 
   .main_box {
