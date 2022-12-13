@@ -855,8 +855,8 @@ input:focus {
   }
 
   .news {
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 10px;
+    width: 100%;
   }
 
   .news__box {
@@ -867,8 +867,13 @@ input:focus {
     width: 100%;
   }
 
+  .box__images {
+    width: 100%;
+  }
+
   .box__info {
     margin-left: 0;
+    width: 100%;
   }
 
   .news__box {
@@ -974,30 +979,17 @@ input:focus {
     flex-direction: column;
   }
 
-  .news {
-    max-width: 330px;
-    margin: 0 auto;
-  }
-
   .additions {
     margin: 0 auto;
-    width: 100%;
+    max-width: 100%;
   }
 
   .search__desc {
-    width: 100%;
+    min-width: calc(100% - 48px);
   }
 
   .mailing__search {
     width: 100%;
-  }
-
-  .news__box {
-    max-width: 320px;
-  }
-
-  .box__images {
-    max-width: 320px;
   }
 
   .shop__block {
@@ -1008,9 +1000,5 @@ input:focus {
   .shop__card {
     margin-bottom: 100px;
     width: 100%;
-  }
-
-  .main_box {
-    min-width: 330px;
   }
 }
